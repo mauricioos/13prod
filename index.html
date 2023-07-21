@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>13Producciones</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon13p.png" sizes="512x512">
+		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+
+		<script type="text/javascript">
+			function color_nav(){
+				let date = new Date();
+				let hour = date.getHours();
+				let html = document.querySelector('html');
+				if(hour > 7 && hour < 19){
+					html.classList.add("day");
+				}else if(html.classList.contains("day")){
+					html.classList.remove("day");
+				}
+				setTimeout(function(){
+					color_nav();
+				}, 1800000);
+			}
+			color_nav();
+		</script>
+	</head>
+	<body>
+		<nav id="nav" class="inl">
+			<div class="logo active" data-filter="">
+				<img src="img/logo.svg">
+				<img src="img/logo-black.svg" class="cnt">
+			</div>
+			
+			<div class="inl relative">
+				<div class="link filter" data-filter=".P_type">
+					<p class="clrWhite">13 Producciones</p>
+				</div>
+				<div class="link filter" data-filter=".M_type">
+					<p class="clrWhite">Masivo</p>
+				</div>
+				<div class="link filter" data-filter=".F_type">
+					<p class="clrWhite">Foro 13</p>
+				</div>
+			</div>
+
+			<div class="select hidden">
+				<select class="full cnt txtC">
+					<option class="txtC" value="">Todo</option>
+					<option class="txtC" value=".P_type">13 Producciones</option>
+					<option class="txtC" value=".M_type">Masivo</option>
+					<option class="txtC" value=".F_type">Foro 13</option>
+				</select>
+			</div>
+
+			<div class="inl">
+				<a class="link" href="https://www.facebook.com/la13pro/" target="_blank">
+					<img src="img/fb-white.svg">
+					<img src="img/fb-black.svg" class="cnt">
+				</a>
+				<a class="link" href="https://www.instagram.com/13_pro/" target="_blank">
+					<img src="img/instagram-white.svg">
+					<img src="img/instagram-black.svg" class="cnt">
+				</a>
+				<div id="hm" class="hm"></div>
+			</div>
+		</nav>
+
+		<menu id="menu" class="cntV txtC">
+			<div class="link close"></div>
+
+			<div class="link modal" data-modal="about">
+				<div class="relative">
+					<img src="img/icon_pica.svg">
+					<img src="img/icon_pica_black.svg" class="cnt">
+				</div>
+				<p>Nosotros</p>
+			</div>
+			<!-- <div class="link modal" data-modal="photographer">
+				<div class="relative">
+					<img src="img/camera.svg">
+					<img src="img/camera_black.svg" class="cnt">
+				</div>
+				<p>Fotógrafos</p>
+			</div> -->
+			<div class="link modal" data-modal="clients">
+				<div class="relative">
+					<img src="img/business.svg">
+					<img src="img/business_black.svg" class="cnt">
+				</div>
+				<p>Clientes</p>
+			</div>
+			<div class="link modal" data-modal="contact">
+				<div class="relative">
+					<img src="img/icon_pin_white.svg">
+					<img src="img/icon_pin.svg" class="cnt">
+				</div>
+				<p>Contacto</p>
+			</div>
+			<br>
+			<a class="link" href="https://www.facebook.com/la13pro/" target="_blank">
+				<div class="relative">
+					<img src="img/fb-white.svg">
+					<img src="img/fb-black.svg" class="cnt">
+				</div>
+			</a>
+			<a class="link" href="https://www.instagram.com/13_pro/" target="_blank">
+				<div class="relative">
+					<img src="img/instagram-white.svg">
+					<img src="img/instagram-black.svg" class="cnt">
+				</div>
+			</a>
+		</menu>
+		<div class="close_menu full cnt"></div>
+
+		<section class="myContentScroll">
+			<div id="grid">
+				<!-- <div class="load_more cntH">
+					<img src="img/search.svg">
+					<p class="loader clrBlack">Cargar más</p>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="lightbox" id="video">
+			<div class="close close_modal"></div>
+			<video class="content" controls> 
+				<source src="video/ree13producciones.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<section class="lightbox" id="about">
+			<div class="cnt full close_modal"></div>
+			<div class="content">
+				<div class="close close_modal"></div>
+				<p class="title">13 Producciones</p>
+
+				<p class="name bld">NUESTRA MISIÓN</p>
+				<p class="desc">Materializar ideas en imágenes que comunican.</p>
+
+				<p class="name bld">NUESTRA VISIÓN</p>
+				<p class="desc">Reconocimiento del cliente por cada proyecto realizado.</p>
+
+				<p class="name bld">NUESTROS VALORES</p>
+				<p class="dot desc">Respetar a la sociedad y al medio ambiente.</p>
+				<p class="dot desc">Ética y compromiso en todo lo que hacemos.</p>
+				<p class="dot desc">Respeto a los intereses de los clientes y profesionalismo en cada uno de los proyectos.</p>
+
+				<div class="brand">
+					<p>Nuestro trabajo en la publicidad ha sido galardonado en diferentes concursos:</p>
+					<p class="type inl">FRANCIA: <span>Cannes Lions</span></p>
+					<p class="type inl">MÉXICO: <span>Circulo Creativo</span></p>
+					<p class="type inl">NEW YORK: <span>The One Show Awards</span></p>
+					<p class="type inl">ARGENTINA: <span>El Ojo de Iberoamérica</span></p>
+				</div>
+				<div class="btns modal" data-modal="video">
+					<span>Ver reel</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="lightbox" id="photos_slider">
+			<!-- <div class="close close_modal"></div> -->
+			<div class="cnt full close_modal"></div>
+			<div class="arrow prev"></div>
+			<div class="content">
+				<div class="slider"></div>
+				<div class="return"></div>
+			</div>
+			<div class="arrow next"></div>
+		</section>
+
+		<section class="lightbox" id="detail">
+			<div class="cnt full close_modal"></div>
+			<div class="close close_modal"></div>
+			<div class="content">
+				<div class="info">
+					<p class="name"></p>
+					<p class="description"></p>
+					<!-- <p class="photographer bld"></p>
+					<p class="camera bld"></p>
+					<p class="relevant bld"></p>
+					<p class="client bld"></p>
+					<div class="clients_logo inl"></div> -->
+				</div>
+
+				<div class="gallery"></div>
+			</div>
+		</section>
+
+		<section class="lightbox" id="photographer">
+			<div class="cnt full close_modal"></div>
+			<div class="content"> 
+				<div class="close close_modal"></div>
+				<div class="list inl"></div>
+			</div>
+		</section>
+
+		<section class="lightbox" id="clients">
+			<div class="cnt full close_modal"></div>
+			<div class="content"> 
+				<div class="close close_modal"></div>
+				<h3 class="txtC">Clientes</h3>
+				<div class="list inl">
+					<p>ANÓNIMO</p>
+					<p>ARRECHEDERA CLAVEROL</p>
+					<p>BBDO MÉXICO</p>
+					<p>CHIAT DAY MÉXICO</p>
+					<p>CHEIL MÉXICO</p>
+					<p>DDB MÉXICO</p>
+					<p>FCB MÉXICO</p>
+					<p>FLOCK</p>
+					<p>GREY GROUP MÉXICO</p>
+					<p>GRUPO PAUTA CREATIVA</p>
+					<p>HAVAS WORLD WIDE</p>
+					<p>J. WALTER THOMPSON MÉXICO</p>
+					<p>LA DOBLE VIDA</p>
+					<p>LA BASE COMUNICACIONES</p>
+					<p>LEO BURNETT MÉXICO</p>
+					<p>MADE</p>
+					<p>MARCEL</p>
+					<p>MACCANN WORLD GROUP</p>
+					<p>NOMADES</p>
+					<p>OGILVY & MATHER</p>
+					<p>PUBLICIS MÉXICO</p>
+					<p>SAATCHI & SAATCHI MÉXICO</p>
+					<p>SPARKLING</p>
+					<p>TERÁN TBWA</p>
+					<p>TODO LO CONTRARIO</p>
+					<p>YOUNG & RUBICAM</p>
+					<p>HAPPY MEDIA</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="lightbox" id="contact">
+			<div class="cnt full close_modal"></div>
+			<div class="content"> 
+				<div class="close close_modal"></div>
+				<a class="map backImg" href="https://goo.gl/maps/FEDY8cdZTr32" target="_blank"></a>
+				<div class="inl">
+					<div class="info">
+						<p class="title">13 PRODUCCIONES</p>
+						<p class="description">Servicios de producción, materialización fotográfica y de video para campañas publicitarias, contenido digital, editoriales, celebridades y sociales.</p>
+						<p class="title">Dirección</p>
+						<a class="address" href="https://goo.gl/maps/FEDY8cdZTr32" target="_blank">
+							<span>Orizaba 42-201 Col. Roma Norte 
+C.P.06700 Ciudad de México.</span>
+						</a>
+						<p class="title">Teléfonos</p>
+						<a href="tel:+015552076734" class="tel">
+							<span>+01 55 5207 6734</span>
+						</a>
+					</div>
+
+					<div class="info">
+						<p class="title">MASIVO</p>
+						<p class="description">Servicios de fotografía automatizada para comercio electrónico.</p>
+						<p class="title">Dirección</p>
+						<a class="address" href="https://goo.gl/maps/FEDY8cdZTr32" target="_blank">
+							<span>Zacatecas 140 Col. Roma Norte 
+C.P.06700 Ciudad de México.</span>
+						</a>
+						<p class="title">Teléfonos</p>
+						<a href="tel:+015570970715" class="tel">
+							<span>+01 55 7097 0715</span>
+						</a>
+						<a href="tel:0445564566665" class="tel">
+							<span>044 55 6456 6665</span>
+						</a>
+					</div>
+
+					<div class="info">
+						<p class="title">FORO 13</p>
+						<p class="description">Renta de espacio para realizar tus producciones fotográficas y de video.</p>
+						<p class="title">Dirección</p>
+						<a class="address" href="https://goo.gl/maps/FEDY8cdZTr32" target="_blank">
+							<span>Zacatecas 140 Col. Roma Norte 
+C.P.06700 Ciudad de México.</span>
+						</a>
+						<p class="title">Teléfonos</p>
+						<a href="tel:+015570970715" class="tel">
+							<span>+01 55 7097 0715</span>
+						</a>
+						<a href="tel:+015552076734" class="tel">
+							<span>+01 55 5207 6734</span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<div id="loader" class="open cnt full inl">
+			<div class="txtC">
+				<div class="img">
+					<img src="img/loader_blanco.png" class="hidden">
+					<img src="img/loader_negro.png">
+					<div class="loader"></div>
+				</div>
+				<p class="counter clrWhite">0%</p>
+			</div>
+		</div>
+
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
